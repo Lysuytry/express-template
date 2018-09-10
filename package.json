@@ -1,0 +1,35 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "template for express-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lysuytry/express-template.git"
+  },
+  "author": "Peter Ly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lysuytry/express-template/issues"
+  },
+  "homepage": "https://github.com/Lysuytry/express-template#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "9.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "5.5.0",
+    "eslint-config-babel": "7.0.2",
+    "eslint-config-prettier": "3.0.1",
+    "eslint-plugin-flowtype": "2.50.0",
+    "prettier": "1.14.2"
+  }
+}
