@@ -2,9 +2,9 @@
   "name": "express-template",
   "version": "1.0.0",
   "description": "template for express-js",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "babel-node src/index --ext js",
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
