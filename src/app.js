@@ -11,7 +11,12 @@ app.use(logger('dev'));
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 // combined
-app.enableCors({ origin: true });
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
 // =======================================================
 
 export default app;
