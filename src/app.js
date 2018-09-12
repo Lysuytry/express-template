@@ -1,8 +1,11 @@
+import parser from 'body-parser';
 import express from 'express';
 import logger from 'morgan';
-import parser from 'body-parser';
+import { mongooseConfig } from './lib/mongoose';
 
 const app = new express();
+
+mongooseConfig();
 
 // ======== Configuration Express ========================
 app.use('/', express.static('public'));
@@ -16,7 +19,6 @@ app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
-
 // =======================================================
 
 export default app;

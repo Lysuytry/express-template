@@ -18,4 +18,8 @@ export class ConfigService {
       DB: this.envConfig.DB
     };
   }
+
+  getMongooseConfig() {
+    return this.envConfig.MONGODB_URL;
+  }
 }
