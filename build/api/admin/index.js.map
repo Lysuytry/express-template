@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/api/admin/index.js"],"names":["routerUser"],"mappings":";;;;;;;;;;;iBAASA,U","file":"index.js","sourcesContent":["export { routerUser } from './user/user.route';\n"]}

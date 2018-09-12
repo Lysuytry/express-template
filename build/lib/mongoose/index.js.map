@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/lib/mongoose/index.js"],"names":["mongooseConfig"],"mappings":";;;;;;;;;;;qBAASA,c","file":"index.js","sourcesContent":["export { mongooseConfig } from './mongoose.provider';\n"]}

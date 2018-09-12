@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Op = exports.sequelize = undefined;
+exports.Op = exports.sequelize = exports.Sequelize = undefined;
 
 var _sequelize = require('sequelize');
 
@@ -15,10 +15,10 @@ var _config2 = _interopRequireDefault(_config);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const sequelizeProvider = async () => {
+const sequelizeProvider = () => {
   try {
     const { DBNAME, DBUSER, DBPASS, DBHOST, DB } = _config2.default.getSequelizeConfig();
-    const sequelize = await new _sequelize2.default(DBNAME, DBUSER, DBPASS, { host: DBHOST, dialect: DB });
+    const sequelize = new _sequelize2.default(DBNAME, DBUSER, DBPASS, { host: DBHOST, dialect: DB });
     sequelize.sync();
     return sequelize;
   } catch (error) {
@@ -29,6 +29,7 @@ const sequelizeProvider = async () => {
 const Op = _sequelize2.default.Op;
 const sequelize = sequelizeProvider();
 
+exports.Sequelize = _sequelize2.default;
 exports.sequelize = sequelize;
 exports.Op = Op;
 //# sourceMappingURL=sequelize.provider.js.map

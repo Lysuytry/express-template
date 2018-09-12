@@ -1,11 +1,9 @@
 import parser from 'body-parser';
 import express from 'express';
 import logger from 'morgan';
-import { mongooseConfig } from './lib/mongoose';
-
 const app = new express();
 
-mongooseConfig();
+// mongooseConfig();
 
 // ======== Configuration Express ========================
 app.use('/', express.static('public'));

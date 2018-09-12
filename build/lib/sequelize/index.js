@@ -18,4 +18,10 @@ Object.defineProperty(exports, 'Op', {
     return _sequelize.Op;
   }
 });
+Object.defineProperty(exports, 'Sequelize', {
+  enumerable: true,
+  get: function () {
+    return _sequelize.Sequelize;
+  }
+});
 //# sourceMappingURL=index.js.map
